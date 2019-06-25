@@ -16,43 +16,7 @@
 <div class="super_container">
 
 	<!-- Header -->
-
-	<header class="header d-flex flex-row">
-		<div class="header_content d-flex flex-row align-items-center">
-			<!-- Logo -->
-			<div class="logo_container">
-				<div class="logo">
-					<img src="images/logo.png" alt="">
-					<span>course</span>
-				</div>
-			</div>
-
-			<!-- Main Navigation -->
-			<nav class="main_nav_container">
-				<div class="main_nav">
-					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="index.html">home</a></li>
-						<li class="main_nav_item"><a href="about.html">about us</a></li>
-						<li class="main_nav_item"><a href="courses.html">courses</a></li>
-						<li class="main_nav_item"><a href="elements.html">elements</a></li>
-						<li class="main_nav_item"><a href="news.html">news</a></li>
-						<li class="main_nav_item"><a href="contact.html">contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<div class="header_side d-flex flex-row justify-content-center align-items-center">
-			<img src="images/phone-call.svg" alt="">
-			<span>+43 4566 7788 2457</span>
-		</div>
-
-		<!-- Hamburger -->
-		<div class="hamburger_container">
-			<i class="fas fa-bars trans_200"></i>
-		</div>
-
-	</header>
-	
+<?php include("header.php"); ?>
 	<!-- Menu -->
 	<div class="menu_container menu_mm">
 
@@ -65,12 +29,12 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
-					<li class="menu_item menu_mm"><a href="about.html">About us</a></li>
-					<li class="menu_item menu_mm"><a href="courses.html">Courses</a></li>
-					<li class="menu_item menu_mm"><a href="elements.html">Elements</a></li>
-					<li class="menu_item menu_mm"><a href="news.html">News</a></li>
-					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+					<li class="menu_item menu_mm"><a href="index.php">Home</a></li>
+					<li class="menu_item menu_mm"><a href="about.php">About us</a></li>
+					<li class="menu_item menu_mm"><a href="courses.php">Courses</a></li>
+					<li class="menu_item menu_mm"><a href="elements.php">Elements</a></li>
+					<li class="menu_item menu_mm"><a href="news.php">News</a></li>
+					<li class="menu_item menu_mm"><a href="contact.php">Contact</a></li>
 				</ul>
 
 				<!-- Menu Social -->
@@ -382,11 +346,11 @@
 						<div class="footer_column_title">Menu</div>
 						<div class="footer_column_content">
 							<ul>
-								<li class="footer_list_item"><a href="index.html">Home</a></li>
-								<li class="footer_list_item"><a href="about.html">About Us</a></li>
-								<li class="footer_list_item"><a href="courses.html">Courses</a></li>
-								<li class="footer_list_item"><a href="news.html">News</a></li>
-								<li class="footer_list_item"><a href="contact.html">Contact</a></li>
+								<li class="footer_list_item"><a href="index.php">Home</a></li>
+								<li class="footer_list_item"><a href="about.php">About Us</a></li>
+								<li class="footer_list_item"><a href="courses.php">Courses</a></li>
+								<li class="footer_list_item"><a href="news.php">News</a></li>
+								<li class="footer_list_item"><a href="contact.php">Contact</a></li>
 							</ul>
 						</div>
 					</div>
