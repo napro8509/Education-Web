@@ -15,8 +15,11 @@
 
 <div class="super_container">
 
+
+
 	<!-- Header -->
 <?php include("header.php"); ?>
+<?php include("teacher.html"); ?>
 	<!-- Menu -->
 	<div class="menu_container menu_mm">
 
