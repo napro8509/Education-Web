@@ -18,50 +18,12 @@
 
 
 	<!-- Header -->
-<?php include("header.php"); ?>
+<?php include("teacher_header.php"); ?>
 <?php include("teacher.html"); ?>
 	<!-- Menu -->
-	<div class="menu_container menu_mm">
-
-		<!-- Menu Close Button -->
-		<div class="menu_close_container">
-			<div class="menu_close"></div>
-		</div>
-
-		<!-- Menu Items -->
-		<div class="menu_inner menu_mm">
-			<div class="menu menu_mm">
-				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="index.php">Home</a></li>
-					<li class="menu_item menu_mm"><a href="about.php">About us</a></li>
-					<li class="menu_item menu_mm"><a href="courses.php">Courses</a></li>
-					<li class="menu_item menu_mm"><a href="elements.php">Elements</a></li>
-					<li class="menu_item menu_mm"><a href="news.php">News</a></li>
-					<li class="menu_item menu_mm"><a href="contact.php">Contact</a></li>
-				</ul>
-
-				<!-- Menu Social -->
-				
-				<div class="menu_social_container menu_mm">
-					<ul class="menu_social menu_mm">
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
-					</ul>
-				</div>
-
-				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
-			</div>
-
-		</div>
-
-	</div>
-	
 	<!-- Home -->
 
-	<div class="home">
+    <div class="home">
 		<div class="home_background_container prlx_parent">
 			<div class="home_background prlx" style="background-image:url(images/teachers_background.jpg)"></div>
 		</div>
@@ -169,7 +131,7 @@
 				</div>
 
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+                <div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -323,7 +285,8 @@
 
 			</div>
 
-			<!-- Footer Content -->
+
+            <!-- Footer Content -->
 
 			<div class="footer_content">
 				<div class="row">
