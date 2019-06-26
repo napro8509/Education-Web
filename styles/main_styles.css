@@ -851,14 +851,14 @@ section
 }
 .section_title
 {
-
 }
 .section_title h1
 {
 	display: block;
 	color: #1a1a1a;
+	margin-top: 100px;
 	font-weight: 500;
-	padding-top: 24px;
+	padding-top: 22px;
 }
 .section_title h1::before
 {
@@ -1291,9 +1291,21 @@ input:last-of-type
 {
 	margin-bottom: 56px;
 }
+.event_item:hover
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .event_item:last-child
 {
 	margin-bottom: 0px;
+}
+.no-left
+{
+	margin-left: 0px;
+}
+.no-right
+{
+	margin-right: 0px;
 }
 .event_date
 {
