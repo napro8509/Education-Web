@@ -3,19 +3,18 @@
 	<header class="header d-flex flex-row">
 		<div class="header_content d-flex flex-row align-items-center">
 			<!-- Logo -->
-			<div class="logo_container">
+			<a href="index.php"><div class="logo_container">
 				<div class="logo">
 					<img src="images/logo.png" alt="">
 					<span>course</span>
 				</div>
-			</div>
+			</div></a>
 
 			<!-- Main Navigation -->
 			<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="index.php">home</a></li>
-						<li class="main_nav_item"><a href="#">about us</a></li>
+						<li class="main_nav_item"><a href="aboutus.php">about us</a></li>
 						<li class="main_nav_item"><a href="courses.php">courses</a></li>					
 						<li class="main_nav_item"><a href="teachers.php">Giáo Viên</a></li>
 						<li class="main_nav_item"><a href="elements.php">elements</a></li>

@@ -67,7 +67,7 @@
 
             <div class="wrap-input100 validate-input" data-validate = "Message is required">
                 <span class="label-input100">Nội dung bài học</span>
-                <textarea class="input100" name="message" placeholder="Nhập nội dung bài học(editor gắn chỗ này) ..."></textarea>
+                <textarea class="input100" name="noidung" placeholder="Nhập nội dung bài học(editor gắn chỗ này) ..."></textarea>
                 <span class="focus-input100"></span>
             </div>
 
