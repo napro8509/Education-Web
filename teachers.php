@@ -19,7 +19,6 @@
 
 	<!-- Header -->
 <?php include("teacher_header.php"); ?>
-<?php include("teacher.html"); ?>
 	<!-- Menu -->
 	<!-- Home -->
 
@@ -33,13 +32,14 @@
 	</div>
 
 	<!-- Teachers -->
+<?php include("teacher.html"); ?>
 
 	<div class="teachers page_section">
 		<div class="container">
 			<div class="row">
 				
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+<!-- 				<div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -59,10 +59,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+<!-- 				<div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -82,10 +82,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+<!-- 				<div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -105,10 +105,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+<!-- 				<div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -128,10 +128,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Teacher -->
-                <div class="col-lg-4 teacher">
+<!--                 <div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -151,10 +151,10 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- Teacher -->
-				<div class="col-lg-4 teacher">
+<!-- 				<div class="col-lg-4 teacher">
 					<div class="card">
 						<div class="card_img">
 							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
@@ -174,7 +174,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</div>
@@ -191,11 +191,11 @@
 
 				<div class="col-lg-6 order-2 order-lg-1">
 					<div class="become_title">
-						<h1>Become a teacher</h1>
+						<h1>Đội ngũ giáo viên</h1>
 					</div>
-					<p class="become_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum. Etiam eu purus nec eros varius luctus. Praesent finibus risus facilisis ultricies venenatis. Suspendisse fermentum sodales lacus, lacinia gravida elit dapibus sed. Cras in lectus elit. Maecenas tempus nunc vitae mi egestas venenatis. Aliquam rhoncus, purus in vehicula porttitor, lacus ante consequat purus, id elementum enim purus nec enim. In sed odio rhoncus, tristique ipsum id, pharetra neque.</p>
+					<p class="become_text"  align="justify">Đội ngũ giáo viên không chỉ được học sinh yêu mến, phụ huynh tin tưởng và giới chuyên môn công nhận bởi tài năng mà còn bởi những cống hiến và tâm huyết đáng trân trọng cho sự nghiệp giáo dục. Trong tương lai, Hệ thống giáo dục đã có kế hoạch và chiến lược cụ thể để tiếp tục phát triển các cơ sở đào tạo trên toàn quốc, mong muốn tiếp tục thu hút những giáo viên giỏi, hội tụ Tâm – Tầm – Tài, cùng vững bước đồng hành trên hành trình đầy vinh quang và thử thách này. .</p>
 					<div class="become_button text-center trans_200">
-						<a href="#">Read More</a>
+						<a href="#">Xem Thêm</a>
 					</div>
 				</div>
 

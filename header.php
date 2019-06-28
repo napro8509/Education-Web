@@ -20,6 +20,7 @@
 						<li class="main_nav_item"><a href="elements.php">elements</a></li>
 						<li class="main_nav_item"><a href="news.php">news</a></li>
 						<li class="main_nav_item"><a href="contact.php">contact</a></li>
+						<li class="main_nav_item"><a href="select.php">Nguyện Vọng</a></li>
 					</ul>
 				</div>
 			</nav>
