@@ -12,19 +12,19 @@
 <link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
 </head>
 <body>
-<?php 
-include('inc/myconnect.php');
-include('inc/function.php');
+<?php
+include 'inc/myconnect.php';
+include 'inc/function.php';
 ?>
 <div class="super_container">
 
 	<!-- Header -->
 
-	<?php include("header.php"); ?>
-	
+	<?php include "header.php";?>
+
 	<!-- Menu -->
-	<?php include("menu.php"); ?>
-	
+	<?php include "menu.php";?>
+
 	<!-- Home -->
 
 	<div class="home">
@@ -50,28 +50,21 @@ include('inc/function.php');
 
 			<div class="row course_boxes">
 				<?php
-						$ct=$_GET['ct'];
-						$query="SELECT * FROM chitietcongthuc WHERE MaChiTiet=".$ct;
-						$results=mysqli_query($dbc,$query);
-						kt_query($results,$query);
-						$number=mysqli_fetch_assoc($results);
-						
-				?>
-				<div class="card-body text-center">
-						<div class="card-title"><a href="courses.php"><?php echo $number['TenCongThuc']; ?></a></div>
+$ct = $_GET['ct'];
+$query = "SELECT * FROM chitietcongthuc WHERE MaChiTiet=" . $ct;
+$results = mysqli_query($dbc, $query);
+kt_query($results, $query);
+$number = mysqli_fetch_assoc($results);
 
-				</div>
-				<div class="card-text"><?php echo $number['NoiDung']; ?></div>
-				<a href="miniquiz.php?congthuc=<?php echo $ct; ?>&cauhoi=0&dung=0&sai=0">Làm Bài kiểm tra kiến thức</a>
-
+?>
 
 				<!-- Popular Course Item -->
 				<!-- <div class="col-lg-4 course_box">
 					<div class="card">
-						<img class="card-img-top" src="<?php echo "images/course_".$i.".jpg" ?>" alt="https://unsplash.com/@kellybrito">
+						<img class="card-img-top" src="<?php echo "images/course_" . $i . ".jpg" ?>" alt="https://unsplash.com/@kellybrito">
 						<div class="card-body text-center">
 							<div class="card-title"><a href="courses.php"><?php echo $courses['TenChuong']; ?></a></div>
-							<div class="card-text"><?php echo "Số lượng bài học: ".$number['count(MaChiTiet)']; ?></div>
+							<div class="card-text"><?php echo "Số lượng bài học: " . $number['count(MaChiTiet)']; ?></div>
 						</div>
 						<div class="price_box d-flex flex-row align-items-center">
 							<div class="course_author_image">
@@ -83,12 +76,24 @@ include('inc/function.php');
 					</div>
 				</div> -->
 				<?php
-				 ?>
+?>
 			</div>
-		</div>		
+            <div class="card-body text-center">
+                <div class="card-title"><a href="courses.php"><?php echo $number['TenCongThuc']; ?></a></div>
+
+            </div>
+            <div class="card-text"><?php echo $number['NoiDung']; ?></div>
+            <div class="container">
+                <div class="row justify-content-md-center">
+            <div class="button button_color_1 text-center trans_200 col-lg-6 badge-warning" >
+                <a style="color:white" href="miniquiz.php?congthuc=<?php echo $ct; ?>&cauhoi=0&dung=0&sai=0">Làm Bài kiểm tra kiến thức</a>
+            </div>
+                </div>
+            </div>
+        </div>
 	</div>
 
-<?php include("footer.php"); ?>
+<?php include "footer.php";?>
 
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>

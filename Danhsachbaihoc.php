@@ -23,8 +23,7 @@ include('inc/function.php');
 	
 	<!-- Menu -->
 	<?php include("menu.php"); ?>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+
 			</div>
 
 		</div>
@@ -60,8 +59,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						{
 						?>
 						<div class="elements_title"><?php echo $mh['TenMonHoc']; ?></div>
-					</div>
-				</div>
 
 				<div class="row pbars_accordions_container">
 					<!-- Progress Bars & Accordions -->	
@@ -71,7 +68,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<!-- Accordions -->
 						<div class="elements_accordions">
 
-						<div class="accordion_container">
 							<?php
 						$query_1="SELECT * FROM tblchuong WHERE MaMonHoc=".$mh['MaMonHoc'];
 						$results_1=mysqli_query($dbc,$query_1);
@@ -79,7 +75,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						while($ch=mysqli_fetch_array($results_1,MYSQLI_ASSOC))
 						{
 						?>
-								<div class="accordion d-flex flex-row align-items-center">
+                            <div class="accordion_container">
+
+                            <div class="accordion d-flex flex-row align-items-center">
 									<?php echo $ch['TenChuong']; ?>
 								</div>
 																<div class="accordion_panel">
@@ -95,58 +93,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 										<p href='#'><?php echo $ct['TenCongThuc']; ?></p>
 										<p>Số lượt học: 200; Số câu hỏi: 50</p>
 									</div>
-									<!-- <div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
 
-									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div> -->
-								
 								<?php } ?>
 								</div>
-						<?php } ?>
-							</div>
+                            </div>
 
-<!-- 							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 5 Con lắc lò xo</div>
-								<div class="accordion_panel">
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
-										<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+                        <?php } ?>
 
-									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 6 Dao động điều hoà</div>
-								<div class="accordion_panel">
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
-										<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
-
-									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
-									<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div>
-								</div>
-							</div> -->
 
 						</div>
 					</div>
@@ -155,8 +108,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<?php } ?>
 			</div>
 		</div>
-		
-		<!-- Loaders -->
+            </div>
+        </div>
+
+        <!-- Loaders -->
 
 		<div class="loaders">
 			<div class="container">

@@ -806,7 +806,8 @@ section
 }
 .pbars_accordions_container
 {
-	padding-top: 104px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 }
 .pbar_container
 {

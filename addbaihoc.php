@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 <head>
     <title>Contact V6</title>
     <meta charset="UTF-8">
@@ -28,64 +28,60 @@
     <link rel="stylesheet" type="text/css" href="styles/teachers_responsive.css">
     <!--===============================================================================================-->
 </head>
+    <body>
+
+
 <div class="super_container">
 
 	    <?php include "teacher_header.php";?>
 
-		<?php include_once('inc/function.php'); ?>
-		<?php include('inc/myconnect.php'); ?>
+		<?php include_once 'inc/function.php';?>
+		<?php include 'inc/myconnect.php';?>
 	</div>
 	<div class="container-contact100">
-		
-		<?php 
 
-			if($_SERVER['REQUEST_METHOD']=='POST')
-			{
+		<?php
 
-				if(empty($_POST['title']))
-				{
-					$errors[]='title';
-				}
-				else
-				{
-					$title=$_POST['title'];
-				}
-				if($_POST['TenMonHoc']==0)
-				{
-					$monhoc=0;
-				}
-				else
-				{
-					$monhoc=$_POST['TenMonHoc'];	
-				}
-				header('Location:baihoc.php?chuong=1');
-				//$monhoc=$_GET['monhoc'];
-				//$idnguoidang=$_SESSION['uid'];
-				// if(empty($errors))
-				// {
-				// 	//inser vao trong db
-				// 	$query_2="INSERT tblchuong(TenChuong,MaMonHoc) VALUES ('{$title}',$monhoc)";
-				// 	$results_2=mysqli_query($dbc,$query_2);
-				// 	kt_query($results_2,$query_2);
-				// 	if(mysqli_affected_rows($dbc)==1)
-				// 	{
-				// 		$query="SELECT * FROM tblchuong ORDER BY MaChuong DESC LIMIT 1";
-				// 		$results=mysqli_query($dbc,$query);
-				// 		kt_query($results,$query);
-				// 		$chuong=mysqli_fetch_array($results,MYSQLI_ASSOC);
-				// 		$machuong=$chuong['MaChuong'];
-				// 		//echo $machuong;
-				// 		header('Location:add_baihoc.php?chuong='.$machuong);
-				// 	}
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-				// }
-				// else
-				// {
-				// 	$message="<p class='required'>Bạn hãy nhập đầy đủ thông tin</p>";
-				// }
+    if (empty($_POST['title'])) {
+        $errors[] = 'title';
+    } else {
+        $title = $_POST['title'];
+    }
+    if ($_POST['TenMonHoc'] == 0) {
+        $monhoc = 0;
+    } else {
+        $monhoc = $_POST['TenMonHoc'];
+    }
+    header('Location:baihoc.php?chuong=1');
+    //$monhoc=$_GET['monhoc'];
+    //$idnguoidang=$_SESSION['uid'];
+    // if(empty($errors))
+    // {
+    //     //inser vao trong db
+    //     $query_2="INSERT tblchuong(TenChuong,MaMonHoc) VALUES ('{$title}',$monhoc)";
+    //     $results_2=mysqli_query($dbc,$query_2);
+    //     kt_query($results_2,$query_2);
+    //     if(mysqli_affected_rows($dbc)==1)
+    //     {
+    //         $query="SELECT * FROM tblchuong ORDER BY MaChuong DESC LIMIT 1";
+    //         $results=mysqli_query($dbc,$query);
+    //         kt_query($results,$query);
+    //         $chuong=mysqli_fetch_array($results,MYSQLI_ASSOC);
+    //         $machuong=$chuong['MaChuong'];
+    //         //echo $machuong;
+    //         header('Location:add_baihoc.php?chuong='.$machuong);
+    //     }
 
-			}
-		?>
+    // }
+    // else
+    // {
+    //     $message="<p class='required'>Bạn hãy nhập đầy đủ thông tin</p>";
+    // }
+
+}
+?>
 		<script type="text/javascript">
 			function ddlselect() {
 			  	var select=document.getElementById("list").value;
@@ -93,38 +89,39 @@
 			  	document.getElementById("txtvalue").value=select;
 			};
 		</script>
+        <div class="p-4">
 		<form name="frmbaiviet" method="POST" enctype="multipart/form-data">
-			<?php 
-				if(isset($message))
-				{
-					echo $message;
-				}
-			?>
+			<?php
+if (isset($message)) {
+    echo $message;
+}
+?>
 			<h3>THÊM MỚI</h3>
 			<div class="form-group">
 				<label style="display:block;">Môn Học</label>
-				<?php selectCtrl('TenMonHoc','forFormdim'); ?>
+				<?php selectCtrl('TenMonHoc', 'forFormdim');?>
 			</div>
 			<input type="hidden" id="txtvalue"/>
-			<?php $mh='<script>document.writeln(select)</script>' ?>
+			<?php $mh = '<script>document.writeln(select)</script>'?>
 			<a href="baihoc.php?chuong=0">Chương đã có sẵn</a>
 			<div class="form-group">
 				<label>Tên chương</label>
-				<input type="text" name="title" value="<?php if(isset($_POST['title'])){ echo $_POST['title'];} ?>" class="form-control" placeholder="Tên Chương ">
-				<?php 
-					if(isset($errors) && in_array('title',$errors))
-					{
-						echo "<p class='required'>Bạn chưa nhập tiêu đề của chương</p>";
-					}
-				?>
-			</div>
+				<input type="text" name="title" value="<?php if (isset($_POST['title'])) {echo $_POST['title'];}?>" class="form-control" placeholder="Tên Chương ">
+				<?php
+if (isset($errors) && in_array('title', $errors)) {
+    echo "<p class='required'>Bạn chưa nhập tiêu đề của chương</p>";
+}
+?>
+		</div>
 <!-- 			<input type="submit" name="submit" class="btn btn-primary" value="Thêm mới">
  -->		</form>
 		<a href="baihoc.php?chuong=1"><button class="contact100-form-btn">
             Tạo Chương mới
-        </button></a>	
+        </button></a>
 	</div>
+</div>
 </div>
 <?php
 // include('footer.php');
 ?>
+</body>

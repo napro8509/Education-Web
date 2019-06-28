@@ -44,7 +44,6 @@ include('inc/function.php');
 						<h1>Tất cả khóa học</h1>
 					</div>
 				</div>
-			</div>
 			<?php
 				$query_2="SELECT * FROM monhoc";
 				$results_2=mysqli_query($dbc,$query_2);
@@ -53,7 +52,7 @@ include('inc/function.php');
 				{
 					?>
 					<div class="row-no-margin"> 
-					<h1><?php echo $mh['TenMonHoc'];?></h1>
+					<h1 class="mt-4"><?php echo $mh['TenMonHoc'];?></h1>
 				<div class="row course_boxes">
 					<?php
 						$query_1="SELECT * FROM tblchuong WHERE MaMonHoc=".$mh['MaMonHoc'];
@@ -72,7 +71,6 @@ include('inc/function.php');
 					<!-- Popular Course Item -->
 					<div class="col-lg-4 course_box">
 						<div class="card">
-							
 							<div class="card-body text-center">
 								<div class="card-title"><a href="courselist.php?chuong=<?php echo $courses['MaChuong']; ?>"><?php echo $courses['TenChuong']; ?></a></div>
 								<img class="card-img-top" src="<?php echo $courses['image']; ?>" alt="https://unsplash.com/@kellybrito">
@@ -92,10 +90,14 @@ include('inc/function.php');
 					$i++;
 					}} ?>
 				</div>
+                    </div>
 			</div>
 		</div>		
 	</div>
-
+	</div>
+	</div>
+	</div>
+    <div class="mt-4"/>
 <?php include("footer.php"); ?>
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
