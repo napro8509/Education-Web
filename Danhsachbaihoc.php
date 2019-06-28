@@ -60,30 +60,60 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<!-- Accordions -->
 						<div class="elements_accordions">
 
-							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 3 con lắc đơn</div>
+						<div class="accordion_container">
+								<div class="accordion d-flex flex-row align-items-center"> Chương 4 Con lắc đơn</div>
 								<div class="accordion_panel">
-									<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
+										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+										<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
 								</div>
 							</div>
 
 							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 3 con lắc đơn</div>
+								<div class="accordion d-flex flex-row align-items-center"> Chương 5 Con lắc lò xo</div>
 								<div class="accordion_panel">
-									<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
+										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+										<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
 								</div>
 							</div>
 
 							<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 3 con lắc đơn</div>
+								<div class="accordion d-flex flex-row align-items-center"> Chương 6 Dao động điều hoà</div>
 								<div class="accordion_panel">
-									<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
+										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+										<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+
+									</div>
+									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
+									<p>Số lượt học: 200; Số câu hỏi: 50</p>
+									</div>
 								</div>
 							</div>
 
