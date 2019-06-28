@@ -31,7 +31,7 @@
 <body>
 
 <div class="super_container">
-    <?php include("teacher_header.php"); ?>
+    <?php include "teacher_header.php";?>
 </div>
 
 
@@ -45,6 +45,15 @@
 				<span class="contact100-form-title">
 					Thêm bài học
 				</span>
+
+<div class="select" id="cbb">
+  <select name="slct" id="slct">
+    <option selected disabled>Chọn chương của bài học</option>
+    <option value="1">Dao động điều hoà</option>
+    <option value="2">Con lắc đơn</option>
+    <option value="3">Con lắc lò xo</option>
+  </select>
+</div>
 
             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                 <span class="label-input100">Tên môn </span>
@@ -87,7 +96,7 @@
     </div>
 </div>
 
-<?php include("footer.1.php"); ?>
+<?php include "footer.1.php";?>
 
 <div id="dropDownSelect1"></div>
 
