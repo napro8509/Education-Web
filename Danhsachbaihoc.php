@@ -19,7 +19,7 @@ include('inc/function.php');
 
 <div class="super_container">
 
-	<?php include("header.php"); ?>
+	<?php include("teacher_header.php"); ?>
 	
 	<!-- Menu -->
 	<?php include("menu.php"); ?>

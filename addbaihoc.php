@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="styles/teachers_responsive.css">
     <!--===============================================================================================-->
 </head>
-    <body>
+    <body style="background: url('http://www.al-mubarok.com/wp-content/uploads/2016/07/Up-Close-Tree-Wallpaper.jpg')">
 
 
 <div class="super_container">
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			  	document.getElementById("txtvalue").value=select;
 			};
 		</script>
-        <div class="p-4">
+        <div class="p-5" style="background: white; border-radius: 8px;">
 		<form name="frmbaiviet" method="POST" enctype="multipart/form-data">
 			<?php
 if (isset($message)) {
@@ -102,7 +102,7 @@ if (isset($message)) {
 				<?php selectCtrl('TenMonHoc', 'forFormdim');?>
 			</div>
 			<input type="hidden" id="txtvalue"/>
-			<?php $mh = '<script>document.writeln(select)</script>'?>
+			<?php $mh = '<script>document.writeln(select)</script>'?>c
 			<a href="baihoc.php?chuong=0">Chương đã có sẵn</a>
 			<div class="form-group">
 				<label>Tên chương</label>

@@ -18,7 +18,7 @@ include('inc/function.php');
 ?>
 <div class="super_container">
 
-	<?php include("header.php"); ?>
+	<?php include("teacher_header.php"); ?>
 	
 	<!-- Menu -->
 	<?php include("menu.php"); ?>
@@ -30,7 +30,7 @@ include('inc/function.php');
 			<div class="home_background prlx" style="background-image:url(images/courses_background.jpg)"></div>
 		</div>
 		<div class="home_content">
-			<h1>Courses</h1>
+			<h1>Khoá học</h1>
 		</div>
 	</div>
 
