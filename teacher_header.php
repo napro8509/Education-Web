@@ -17,7 +17,7 @@
                     <li class="main_nav_item"><a href="form.php">Câu hỏi</a></li>
                     <li class="main_nav_item"><a href="courses.php">Môn học</a></li>
                     <li class="main_nav_item"><a href="teachers.php">Giáo Viên</a></li>
-                    <li class="main_nav_item"><a href="elements.php">Component</a></li>
+                    <li class="main_nav_item"><a href="Danhsachbaihoc.php">Danh sách bài học</a></li>
                     <li class="main_nav_item"><a href="news.php">Tin tức</a></li>
                     <li class="main_nav_item"><a href="contact.php">Liên hệ</a></li>
                     <li class="main_nav_item"><a href="baihoc.php">Bài học</a></li>
