@@ -37,7 +37,7 @@ function menu_dacap($parent_id=0,$dem=0)
 {
 	global $dbc;
 	$cate_child=array();
-	$query_dq_mn="SELECT * FROM tbldanhmuc WHERE parent_id=".$parent_id." AND menu=1 ORDER BY ordernum DESC";
+	$query_dq_mn="SELECT * FROM tbldanhmucsanpham WHERE parent_id=".$parent_id." AND menu=1 ORDER BY ordernum DESC";
 	$categories_mn=mysqli_query($dbc,$query_dq_mn);
 	while ($category_mn=mysqli_fetch_array($categories_mn,MYSQLI_ASSOC))
 	{
@@ -49,6 +49,8 @@ function menu_dacap($parent_id=0,$dem=0)
 		if($dem==0)
 		{
 			echo "<ul class='sf-menu' id='example'>";
+			echo "<li><a href='http://nycstore.top/'>Trang Chủ</a></li>";
+			echo "<li><a href='topview.php'>Top lượt xem</a></li>";
 		}		
 		else
 		{
@@ -57,13 +59,17 @@ function menu_dacap($parent_id=0,$dem=0)
 	
 		foreach ($cate_child as $key => $item) 
 		{	
-			echo "<li><a href='tinbycategory_1.php?dm=".$item['id']."'>".$item['danhmuc']."</a>";
+			echo "<li><a href='tinbycategory_1.php?dm=".$item['id']."'>".$item['danhmucsanpham']."</a>";
 
 			menu_dacap($item['id'],++$dem);			
 			echo "</li>";			
 		}
 		if(count($cate_child)==$dem)
 		{	
+			echo "<li><a href='sanpham_1.php'>Tất cả sản phẩm</a></li>";
+			echo "<li><a href='sanphambian.php'>Sản phẩm bị ẩn</a></li>";
+			echo "<li><a href='gocthantho.php'>Góc than thở</a></li>";		
+			echo "<li><a href='lienhe.php'>Liên hệ</a></li>";
 		}	
 		echo "</ul>";
 	}
@@ -71,22 +77,86 @@ function menu_dacap($parent_id=0,$dem=0)
 function show_categories($parent_id="0",$insert_text="-")
 {
 	global $dbc;
-	$query_dq="SELECT * FROM khachsan WHERE parent_id=".$parent_id." ORDER BY parent_id DESC";
+	$query_dq="SELECT * FROM monhoc";
 	$categories=mysqli_query($dbc,$query_dq);
 	while($category=mysqli_fetch_array($categories,MYSQLI_ASSOC))
 	{
-		var_dump($category);
-		echo("<option value='".$category["MaKS"]."'>".$insert_text.$category['TenKS']."</option>");
-		show_categories($category["MaKS"],$insert_text."-");
+		echo("<option value='".$category["MaMonHoc"]."'>".$insert_text.$category['TenMonHoc']."</option>");
 	}
 	return true;
 }
 function selectCtrl($name,$class)
 {
 	global $dbc;
-	echo "<select name='".$name."' class='".$class."'>";
-	echo "<option value='0'></option>";
+	echo "<select id='list' name='".$name."' class='".$class."' onchange='ddlselect();'>";
+	echo "<option value='0'>Môn Học</option>";
 	show_categories();
 	echo "</select>";
 }
+function show_categories_2($chose,$parent_id="0",$insert_text="-")
+{
+	//$i=0;
+	global $dbc;
+	$query_dq="SELECT * FROM tblchuong";
+	$categories=mysqli_query($dbc,$query_dq);
+	while($category=mysqli_fetch_array($categories,MYSQLI_ASSOC))
+	{
+		if($category["MaChuong"]==$chose)
+		{
+			echo("<option value='".$category["MaChuong"]."' selected>".$insert_text.$category['TenChuong']."</option>");
+		}
+		else{
+			echo("<option value='".$category["MaChuong"]."'>".$insert_text.$category['TenChuong']."</option>");	
+		}
+		//$i++;
+
+	}
+	return true;
+
+}
+function selectCtrl_2($name,$class,$chose)
+{
+	global $dbc;
+	echo "<select name='".$name."' class='".$class."'>";
+	echo "<option value='0'>Chương</option>";
+	show_categories_2($chose);
+	echo "</select>";
+}
+
+
+
+// function show_categories($parent_id="0",$insert_text="-",$case)
+// {
+// 	global $dbc;
+// 	if($case==0)
+// 	{
+// 		$query_dq="SELECT * FROM monhoc";
+// 	}
+// 	else 
+// 	{
+// 		$query_dq="SELECT * FROM tblchuong";
+// 	}
+// 	$categories=mysqli_query($dbc,$query_dq);
+// 	while($category=mysqli_fetch_array($categories,MYSQLI_ASSOC))
+// 	{
+// 		if($case==0)
+// 		{
+// 			echo("<option value='".$category["MaMonHoc"]."'>".$insert_text.$category['TenMonHoc']."</option>");
+// 		}
+// 		else 
+// 		{
+// 			echo("<option value='".$category["MaChuong"]."'>".$insert_text.$category['TenChuong']."</option>");	
+// 		}
+// 	}
+// 	return true;
+
+// }
+// function selectCtrl($name,$class,$case)
+// {
+// 	global $dbc;
+// 	echo "<select name='".$name."' class='".$class."'>";
+// 	echo "<option value='0'>Môn Học</option>";
+// 	show_categories($case);
+// 	echo "</select>";
+// }
 ?>

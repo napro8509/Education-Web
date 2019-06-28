@@ -45,44 +45,53 @@ include('inc/function.php');
 					</div>
 				</div>
 			</div>
+			<?php
+				$query_2="SELECT * FROM monhoc";
+				$results_2=mysqli_query($dbc,$query_2);
+				kt_query($results_2,$query_2);
+				while($mh=mysqli_fetch_array($results_2,MYSQLI_ASSOC))
+				{
+					?>
+					<div class="row-no-margin"> 
+					<h1><?php echo $mh['TenMonHoc'];?></h1>
+				<div class="row course_boxes">
+					<?php
+						$query_1="SELECT * FROM tblchuong WHERE MaMonHoc=".$mh['MaMonHoc'];
+						$results_1=mysqli_query($dbc,$query_1);
+						kt_query($results_1,$query_1);
+						$i=1;
+						while($courses=mysqli_fetch_array($results_1,MYSQLI_ASSOC))
+						{
+							$query="SELECT count(MaChiTiet) FROM chitietcongthuc WHERE MaChuong=".$courses['MaChuong'];
+							$results=mysqli_query($dbc,$query);
+							kt_query($results,$query);
+							$number=mysqli_fetch_array($results,MYSQLI_ASSOC);
 
-			<div class="row course_boxes">
-				<?php
-					$query_1="SELECT * FROM tblchuong";
-					$results_1=mysqli_query($dbc,$query_1);
-					kt_query($results_1,$query_1);
-					$i=1;
-					while($courses=mysqli_fetch_array($results_1,MYSQLI_ASSOC))
-					{
-						$query="SELECT count(MaChiTiet) FROM chitietcongthuc WHERE MaChuong=
-".$courses['MaChuong'];
-						$results=mysqli_query($dbc,$query);
-						kt_query($results,$query);
-						$number=mysqli_fetch_array($results,MYSQLI_ASSOC);
 
-
-				?>
-				<!-- Popular Course Item -->
-				<div class="col-lg-4 course_box">
-					<div class="card">
-						<img class="card-img-top" src="<?php echo "images/course_".$i.".jpg" ?>" alt="https://unsplash.com/@kellybrito">
-						<div class="card-body text-center">
-							<div class="card-title"><a href="courselist.php?chuong=<?php echo $courses['MaChuong']; ?>"><?php echo $courses['TenChuong']; ?></a></div>
-							<div class="card-text"><?php echo "Số lượng bài học: ".$number['count(MaChiTiet)']; ?></div>
-						</div>
-						<div class="price_box d-flex flex-row align-items-center">
-							<div class="course_author_image">
-								<img src="images/author.jpg" alt="https://unsplash.com/@mehdizadeh">
+					?>
+					<!-- Popular Course Item -->
+					<div class="col-lg-4 course_box">
+						<div class="card">
+							
+							<div class="card-body text-center">
+								<div class="card-title"><a href="courselist.php?chuong=<?php echo $courses['MaChuong']; ?>"><?php echo $courses['TenChuong']; ?></a></div>
+								<img class="card-img-top" src="<?php echo $courses['image']; ?>" alt="https://unsplash.com/@kellybrito">
+								<div class="card-text"><?php echo "Số lượng bài học: ".$number['count(MaChiTiet)']; ?></div>
 							</div>
-							<div class="course_author_name"><?php echo "Nguyễn Công Hoan"; ?><span></span></div>
-							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>Free</span></div>
+							<div class="price_box d-flex flex-row align-items-center">
+								<div class="course_author_image">
+									<img src="images/author.jpg" alt="https://unsplash.com/@mehdizadeh">
+								</div>
+								<div class="course_author_name"><?php echo "Nguyễn Công Hoan"; ?><span></span></div>
+								<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>Free</span></div>
+							</div>
 						</div>
 					</div>
+					<?php
+					$i=$i%6+1; 
+					$i++;
+					}} ?>
 				</div>
-				<?php
-				$i=$i%6+1; 
-				$i++;
-				} ?>
 			</div>
 		</div>		
 	</div>

@@ -32,6 +32,9 @@
 
 <div class="super_container">
     <?php include "teacher_header.php";?>
+            <?php include_once('inc/function.php'); ?>
+        <?php include('inc/myconnect.php'); ?>
+
 </div>
 
 
@@ -46,38 +49,32 @@
 					Thêm bài học
 				</span>
 
-<div class="select" id="cbb">
-  <select name="slct" id="slct">
-    <option selected disabled>Chọn chương của bài học</option>
-    <option value="1">Dao động điều hoà</option>
-    <option value="2">Con lắc đơn</option>
-    <option value="3">Con lắc lò xo</option>
-  </select>
-</div>
-
-            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                <span class="label-input100">Tên môn </span>
-                <input class="input100" type="text" name="email" placeholder="Nhập tên môn học...">
-                <span class="focus-input100"></span>
+            <div class="form-group">
+                <label style="display:block;">Chương</label>
+                <?php $chuong=$_GET['chuong'];
+                if(!$chuong)
+                {
+                    $chuong=0;
+                selectCtrl_2('TenChuong','forFormdim',$chuong);
+            } ?>
             </div>
 
-
-            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+             <div class="wrap-input100 " data-validate = "Valid email is required: ex@abc.xyz">
                 <span class="label-input100">Tên bài học</span>
-                <input class="input100" type="text" name="email" placeholder="Nhập tên bài học...">
-                <span class="focus-input100"></span>
+                <input class="input100" type="text"  placeholder="Nhập tên bài học...">
+                <span class=""></span>
             </div>
 
-            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+            <div class="wrap-input100" data-validate = "Message is required">
                 <span class="label-input100">Mô tả bài học</span>
-                <textarea class="input100" name="message" placeholder="Nhập mô tả bài ..."></textarea>
-                <span class="focus-input100"></span>
+                <textarea class="input100" placeholder="Nhập mô tả bài ..."></textarea>
+                <span class=""></span>
             </div>
 
-            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+            <div class="wrap-input100" 
                 <span class="label-input100">Nội dung bài học</span>
-                <textarea class="input100" name="noidung" placeholder="Nhập nội dung bài học(editor gắn chỗ này) ..."></textarea>
-                <span class="focus-input100"></span>
+                <textarea class="input100" name="noidung" placeholder="Nhập nội dung bài học"></textarea>
+                <span class=""></span>
             </div>
 
             <div class="container-contact100-form-btn">
@@ -88,8 +85,12 @@
 						</span>
                 </button>
             </div>
-        </form>
 
+
+        </form>
+        <a href="form.php"><button class="contact100-form-btn">
+            Tạo bài kiểm tra
+        </button></a>
         <span class="contact100-more">
 				For any question contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
 			</span>

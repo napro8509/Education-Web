@@ -20,7 +20,7 @@
                     <li class="main_nav_item"><a href="Danhsachbaihoc.php">Danh sách bài học</a></li>
                     <li class="main_nav_item"><a href="news.php">Tin tức</a></li>
                     <li class="main_nav_item"><a href="contact.php">Liên hệ</a></li>
-                    <li class="main_nav_item"><a href="baihoc.php">Bài học</a></li>
+                    <li class="main_nav_item"><a href="addbaihoc.php">Bài học</a></li>
                     <li class="main_nav_item"><a href="import.php">Đăng đề thi</a></li>
 
                 </ul>

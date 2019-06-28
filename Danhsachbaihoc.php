@@ -12,6 +12,10 @@
 <link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
 </head>
 <body>
+<?php 
+include('inc/myconnect.php');
+include('inc/function.php');
+?>
 
 <div class="super_container">
 
@@ -48,7 +52,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="elements_title">Môn vật lý</div>
+						<?php
+						$query_2="SELECT * FROM monhoc";
+						$results_2=mysqli_query($dbc,$query_2);
+						kt_query($results_2,$query_2);
+						while($mh=mysqli_fetch_array($results_2,MYSQLI_ASSOC))
+						{
+						?>
+						<div class="elements_title"><?php echo $mh['TenMonHoc']; ?></div>
 					</div>
 				</div>
 
@@ -61,13 +72,30 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="elements_accordions">
 
 						<div class="accordion_container">
-								<div class="accordion d-flex flex-row align-items-center"> Chương 4 Con lắc đơn</div>
-								<div class="accordion_panel">
+							<?php
+						$query_1="SELECT * FROM tblchuong WHERE MaMonHoc=".$mh['MaMonHoc'];
+						$results_1=mysqli_query($dbc,$query_1);
+						kt_query($results_1,$query_1);
+						while($ch=mysqli_fetch_array($results_1,MYSQLI_ASSOC))
+						{
+						?>
+								<div class="accordion d-flex flex-row align-items-center">
+									<?php echo $ch['TenChuong']; ?>
+								</div>
+																<div class="accordion_panel">
+
+								<?php
+								$query="SELECT * FROM chitietcongthuc WHERE MaChuong=".$ch['MaChuong'];
+								$results=mysqli_query($dbc,$query);
+								kt_query($results,$query);
+								while($ct=mysqli_fetch_array($results,MYSQLI_ASSOC))
+								{
+								?>
 									<div class="d-flex flex-row" style="justify-content: space-between;">
-										<p href='#'>Dạng 1: Biến đổi chu kỳ, tần số con lắc đơn dao động điều hòa</p>
+										<p href='#'><?php echo $ct['TenCongThuc']; ?></p>
 										<p>Số lượt học: 200; Số câu hỏi: 50</p>
 									</div>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
+									<!-- <div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 2: Con lắc đơn dao động tuần hoàn - Năng lượng - Vận tốc - Lực căng dây</p>
 									<p>Số lượt học: 200; Số câu hỏi: 50</p>
 
@@ -75,11 +103,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="d-flex flex-row" style="justify-content: space-between;">
 									<p>Dạng 3: Thay đổi chu kỳ con lắc đơn khi thay đổi độ cao, nhiệt độ</p>
 									<p>Số lượt học: 200; Số câu hỏi: 50</p>
-									</div>
+									</div> -->
+								
+								<?php } ?>
 								</div>
+						<?php } ?>
 							</div>
 
-							<div class="accordion_container">
+<!-- 							<div class="accordion_container">
 								<div class="accordion d-flex flex-row align-items-center"> Chương 5 Con lắc lò xo</div>
 								<div class="accordion_panel">
 									<div class="d-flex flex-row" style="justify-content: space-between;">
@@ -115,12 +146,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<p>Số lượt học: 200; Số câu hỏi: 50</p>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
 
 				</div>
+			<?php } ?>
 			</div>
 		</div>
 		

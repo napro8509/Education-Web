@@ -160,7 +160,8 @@ include('inc/function.php');
 							$(".<?= $answers['id']; ?>").click(function(){
 							        $answers_choose = <?= $answers['id']; ?>;
 							        btnConfirm.click();
-							        setTimeout(function(){ btnnext.click(); }, 600);
+							        setTimeout(function(){
+							         btnnext.click(); }, 600);
 							        
 							    });
 						});
