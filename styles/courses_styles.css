@@ -758,6 +758,20 @@ section
 .course_box
 {
 	margin-bottom: 108px;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.course_box:hover {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 .course_box:nth-last-child(-n+3)
 {
@@ -783,7 +797,7 @@ section
 }
 .card-title
 {
-	margin-top: 55px;
+	margin-top: 30px;
 }
 .card-title a
 {
@@ -801,7 +815,7 @@ section
 	font-size: 14px;
 	font-weight: 500;
 	color: #a5a5a5;
-	margin-top: -12px;
+	margin-top: 10px;
 }
 .price_box
 {

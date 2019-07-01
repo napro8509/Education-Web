@@ -54,7 +54,7 @@ include('inc/function.php');
                 ?>
 
                 <div class="row-no-margin">
-                    <h1 class="mt-4"><?php echo $mh['TenMonHoc']; ?></h1>
+                    <h1 class="mt-4" style="color: cornflowerblue;"><?php echo $mh['TenMonHoc']; ?></h1>
                     <div class="row course_boxes">
                         <?php
                         $query_1="SELECT * FROM tblchuong WHERE MaMonHoc=".$mh['MaMonHoc'];
@@ -89,6 +89,7 @@ include('inc/function.php');
                         ?>
                     </div>
                 </div>
+                <hr>
                 <?php
             }
             ?>
