@@ -89,6 +89,153 @@ include('inc/function.php');
 
 		</div>		
 	</div>
+	<div class="section_title text-center">
+		<h1>Đội ngũ Giáo Viên</h1>
+	</div>
+	<div class="teachers page_section">
+		<div class="container">
+			<div class="row">
+
+				<!-- Teacher -->
+ 				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_1.jpg" alt="https://unsplash.com/photos/n8jeOSxCRfQ">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Bùi Thị Hải Vân</a></div>
+							<div class="card-text">Ngữ Văn</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Teacher -->
+ 				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_2.jpg" alt="https://unsplash.com/@seteales">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Mỹ Dung</a></div>
+							<div class="card-text">Toán học</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Teacher -->
+ 				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_3.jpg" alt="https://unsplash.com/@mehdizadeh">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Nguyễn Ly Ly</a></div>
+							<div class="card-text">Hóa Học</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+ 				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_4.jpg" alt="https://unsplash.com/@michaeldam">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Hà My</a></div>
+							<div class="card-text">Tiếng Anh</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Teacher -->
+ 				<div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_5.jpg" alt="https://unsplash.com/@jcpeacock">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Phan Hồng Anh</a></div>
+							<div class="card-text">Toán học</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Teacher -->
+                <div class="col-lg-4 teacher">
+					<div class="card">
+						<div class="card_img">
+							<div class="card_plus trans_200 text-center"><a href="#">+</a></div>
+							<img class="card-img-top trans_200" src="images/teacher_6.jpg" alt="https://unsplash.com/@jaredsluyter">
+						</div>
+						<div class="card-body text-center">
+							<div class="card-title"><a href="#">Lê Quỳnh Trang</a></div>
+							<div class="card-text">Vật Lý</div>
+							<div class="teacher_social">
+								<ul class="menu_social">
+									<li class="menu_social_item"><a href="#"><i class="fa fa-phone"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
 		<?php include("milestone.php"); ?>
 
 

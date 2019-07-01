@@ -6,7 +6,6 @@
         <a href="index.php"><div class="logo_container">
             <div class="logo">
                 <img src="images/logo.png" alt="">
-                <span>course</span>
             </div>
         </div></a>
 
@@ -14,7 +13,7 @@
         <nav class="main_nav_container">
             <div class="main_nav">
                 <ul class="main_nav_list">
-                    <li class="main_nav_item"><a href="form.php">Câu hỏi</a></li>
+                    <!-- <li class="main_nav_item"><a href="form.php">Câu hỏi</a></li> -->
                     <li class="main_nav_item"><a href="courses.php">Môn học</a></li>
                     <li class="main_nav_item"><a href="teachers.php">Giáo Viên</a></li>
                     <li class="main_nav_item"><a href="Danhsachbaihoc.php">Danh sách bài học</a></li>

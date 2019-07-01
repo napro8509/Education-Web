@@ -74,27 +74,36 @@ include('inc/function.php');
 						kt_query($results_1,$query_1);
 						while($ch=mysqli_fetch_array($results_1,MYSQLI_ASSOC))
 						{
+							$count="SELECT count(MaChiTiet) FROM chitietcongthuc WHERE MaChuong=".$ch['MaChuong'];
+									$results_count=mysqli_query($dbc,$count);
+									kt_query($results_count,$count);
+									$count_n=mysqli_fetch_array($results_count,MYSQLI_ASSOC)
 						?>
                             <div class="accordion_container">
 
-                            <div class="accordion d-flex flex-row align-items-center">
-									<?php echo $ch['TenChuong']; ?>
-								</div>
-																<div class="accordion_panel">
-
-								<?php
-								$query="SELECT * FROM chitietcongthuc WHERE MaChuong=".$ch['MaChuong'];
-								$results=mysqli_query($dbc,$query);
-								kt_query($results,$query);
-								while($ct=mysqli_fetch_array($results,MYSQLI_ASSOC))
-								{
-								?>
-									<div class="d-flex flex-row" style="justify-content: space-between;">
-										<p href='#'><?php echo $ct['TenCongThuc']; ?></p>
-										<p>Số lượt học: 200; Số câu hỏi: 50</p>
+	                            <div class="accordion d-flex flex-row align-items-center">
+										<?php echo $ch['TenChuong']; ?>
+										<p>Số lượt học: <?php echo $count_n['count(MaChiTiet)']; ?></p>
 									</div>
+								<div class="accordion_panel">
 
-								<?php } ?>
+									<?php
+									$query="SELECT * FROM chitietcongthuc WHERE MaChuong=".$ch['MaChuong'];
+									$results=mysqli_query($dbc,$query);
+									kt_query($results,$query);
+
+									while($ct=mysqli_fetch_array($results,MYSQLI_ASSOC))
+									{
+										
+									?>
+
+										<a href="lesson_details.php?ct=<?php echo $ct['MaChiTiet']; ?>">
+										<div class="d-flex flex-row" style="justify-content: space-between;">
+											<p href=""><?php echo $ct['TenCongThuc']; ?></p>
+	<!-- 										<p>Số lượt học: <?php echo $count_n['count(MaChiTiet)']; ?>; Số câu hỏi: 50</p>
+	 -->								</div></a>
+
+									<?php } ?>
 								</div>
                             </div>
 

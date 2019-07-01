@@ -57,8 +57,8 @@
 						<div class="footer_column_content">
 							<ul>
 								<li class="footer_list_item"><a href="index.php">Home</a></li>
-								<li class="footer_list_item"><a href="#">About Us</a></li>
-								<li class="footer_list_item"><a href="#">Courses</a></li>
+								<li class="footer_list_item"><a href="#">Chúng Tôi</a></li>
+								<li class="footer_list_item"><a href="#">Khóa Học</a></li>
 								<li class="footer_list_item"><a href="news.php">News</a></li>
 								<li class="footer_list_item"><a href="contact.php">Contact</a></li>
 							</ul>
