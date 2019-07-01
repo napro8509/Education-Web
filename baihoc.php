@@ -71,6 +71,12 @@
                 <span class=""></span>
             </div>
 
+            <div class="wrap-input100" data-validate = "Message is required">
+                <span class="label-input100">Mô tả bài học</span>
+                <textarea class="input100" placeholder="Nhập mô tả bài ..."></textarea>
+                <span class=""></span>
+            </div>
+            
             <div class="wrap-input100" 
                 <span class="label-input100">Nội dung bài học</span>
                 <textarea class="input100" name="noidung" placeholder="Nhập nội dung bài học"></textarea>

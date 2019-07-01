@@ -54,7 +54,7 @@ include('inc/function.php');
 					<div class="desc">
 						<h1 align="center">Giám đốc : Nguyễn Công Hoan</h1>
 						<h1 align="center">Chủ dự án</a></h1>
-						<p align="justify">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<p align="justify">Là người có nhiều kinh nghiệm trong việc quản lý các dự án lớn. Là một Business Analyst lâu năm và là một người truyền đạt kiến thức cho các sinh viên tại các trường đại học lớn hàng đầu tại thành phố hồ chí minh.</p>
 						<span><a href="#" class="btn btn-primary btn-sm btn-course">Thông Tin Chi Tiết</a></span>
 					</div>
 				</div>
@@ -68,7 +68,7 @@ include('inc/function.php');
 						<div class="desc">
 							<h2 align="center">Trưởng phòng kỹ thuật</h2>
 							<h2 align="center">Đặng Việt Dũng</h2>
-							<p align="justify"></p>
+							<p align="justify">Chịu trách nhiệm kỹ thuật</p>
 							<span><a href="#" class="btn btn-primary btn-sm btn-course">Thông Tin Chi Tiết</a></span>
 						</div>
 					</div>
@@ -80,7 +80,7 @@ include('inc/function.php');
 						<div class="desc">
 							<h2 align="center" align="center">Trưởng phòng dịch vụ</h2>
 							<h2 align="center">Lê Giô Na</h2>
-							<p align="justify">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<p align="justify">Cung cấp dịch vụ</p>
 							<span><a href="#" class="btn btn-primary btn-sm btn-course">Thông Tin Chi Tiết</a></span>
 						</div>
 					</div>

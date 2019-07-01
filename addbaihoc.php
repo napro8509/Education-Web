@@ -102,7 +102,7 @@ if (isset($message)) {
 				<?php selectCtrl('TenMonHoc', 'forFormdim');?>
 			</div>
 			<input type="hidden" id="txtvalue"/>
-			<?php $mh = '<script>document.writeln(select)</script>'?>c
+			<?php $mh = '<script>document.writeln(select)</script>'?>
 			<a href="baihoc.php?chuong=0">Chương đã có sẵn</a>
 			<div class="form-group">
 				<label>Tên chương</label>

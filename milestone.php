@@ -11,7 +11,7 @@
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_1.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
 						<div class="milestone_counter" data-end-value="750">0</div>
-						<div class="milestone_text">Số lượng học sinh hiện tại</div>
+						<div class="milestone_text">Học Sinh</div>
 					</div>
 				</div>
 
@@ -20,7 +20,7 @@
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_2.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
 						<div class="milestone_counter" data-end-value="120">0</div>
-						<div class="milestone_text">Certified Teachers</div>
+						<div class="milestone_text">Giáo Viên Hiện Tại</div>
 					</div>
 				</div>
 
@@ -29,7 +29,7 @@
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_3.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
 						<div class="milestone_counter" data-end-value="39">0</div>
-						<div class="milestone_text">Approved Courses</div>
+						<div class="milestone_text">Khóa Học</div>
 					</div>
 				</div>
 
@@ -38,7 +38,7 @@
 					<div class="milestone text-center">
 						<div class="milestone_icon"><img src="images/milestone_4.svg" alt="https://www.flaticon.com/authors/zlatko-najdenovski"></div>
 						<div class="milestone_counter" data-end-value="3500" data-sign-before="+">0</div>
-						<div class="milestone_text">Graduate Students</div>
+						<div class="milestone_text">Sinh Viên tốt nghiệp</div>
 					</div>
 				</div>
 

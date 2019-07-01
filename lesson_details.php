@@ -80,9 +80,16 @@ $number = mysqli_fetch_assoc($results);
 			</div>
             <div class="card-body text-center">
                 <div class="card-title"><a href="courses.php"><?php echo $number['TenCongThuc']; ?></a></div>
-
+                <?php if($number['linkvideo']!='')
+	            {?>
+		            <video controls>
+					  	<source src="<?php echo $number['linkvideo']; ?>" type="video/mp4">
+					</video>
+				<?php } ?>
             </div>
             <div class="card-text"><?php echo $number['NoiDung']; ?></div>
+            
+
             <div class="container">
                 <div class="row justify-content-md-center">
             <div class="button button_color_1 text-center trans_200 col-lg-6 badge-warning" >
