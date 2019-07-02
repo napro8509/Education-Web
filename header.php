@@ -17,9 +17,9 @@
 						<li class="main_nav_item"><a href="aboutus.php">Chúng Tôi</a></li>
 						<li class="main_nav_item"><a href="courses.php">Khóa Học</a></li>					
 						<li class="main_nav_item"><a href="teachers.php">Giáo Viên</a></li>
-						<li class="main_nav_item"><a href="elements.php">elements</a></li>
-						<li class="main_nav_item"><a href="news.php">news</a></li>
-						<li class="main_nav_item"><a href="contact.php">contact</a></li>
+						<li class="main_nav_item"><a href="elements.php">Thành Phần</a></li>
+						<li class="main_nav_item"><a href="news.php">Tin Tức</a></li>
+						<li class="main_nav_item"><a href="contact.php">Liên hệ</a></li>
 						<li class="main_nav_item"><a href="select.php">Nguyện Vọng</a></li>
 					</ul>
 				</div>
