@@ -56,7 +56,7 @@
 					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 						<div class="hero_slide_content text-center">
-							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Get your <span>Education</span> today!</h1>
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Chia sẻ <span> kiến thức</span> !</h1>
 						</div>
 					</div>
 				</div>
@@ -78,8 +78,8 @@
 						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="images/earth-globe.svg" class="svg" alt="">
 							<div class="hero_box_content">
-								<h2 class="hero_box_title">Online Courses</h2>
-								<a href="courses.php" class="hero_box_link">view more</a>
+								<h2 class="hero_box_title">Khoá học </h2>
+								<a href="courses.php" class="hero_box_link">xem thêm</a>
 							</div>
 						</div>
 					</div>
@@ -88,8 +88,8 @@
 						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="images/books.svg" class="svg" alt="">
 							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Library</h2>
-								<a href="courses.php" class="hero_box_link">view more</a>
+								<h2 class="hero_box_title">Thư viện</h2>
+								<a href="courses.php" class="hero_box_link">xem thêm</a>
 							</div>
 						</div>
 					</div>
@@ -98,8 +98,8 @@
 						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
 							<img src="images/professor.svg" class="svg" alt="">
 							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Teachers</h2>
-								<a href="teachers.php" class="hero_box_link">view more</a>
+								<h2 class="hero_box_title">Giáo viên</h2>
+								<a href="teachers.php" class="hero_box_link">xem </a>
 							</div>
 						</div>
 					</div>
@@ -116,7 +116,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title text-center">
-						<h1>Popular Courses</h1>
+						<h1>Khoá học phổ biến</h1>
 					</div>
 				</div>
 			</div>
@@ -182,7 +182,7 @@
 
 	<!-- Register -->
 
-	<div class="register">
+	<div class="register" style="margin-top: 10px">
 
 		<div class="container-fluid">
 			
