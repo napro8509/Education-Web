@@ -12,7 +12,6 @@ body,html{
 }
 
 .card{
-    height: 100vh;
     border-radius: 15px !important;
     background-color: rgba(0,0,0,0.4) !important;
 }
@@ -92,7 +91,6 @@ body,html{
     margin-bottom: 15px !important;
 }
 .active{
-    background-color: rgba(0,0,0,0.3);
 }
 .user_img{
     height: 70px;

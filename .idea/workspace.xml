@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e189828-6c5d-4465-8d8d-fb1e60d0d1a5" name="Default Changelist" comment="Update UI ChatBox">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat/ChatBox.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat/ChatRoom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat/ChatRoom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VirtualRoom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/VirtualRoom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Education.iml" afterDir="false" />
+    <list default="true" id="2e189828-6c5d-4465-8d8d-fb1e60d0d1a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat/ChatList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/ChatRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/ChatRoom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VirtualRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualRoom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/VirtualRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/VirtualRoom.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,20 +29,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ff4b5a</find>
-      <find>font-fam</find>
-      <find>font-fa</find>
-      <find>68</find>
-      <find>-12</find>
-      <find>event</find>
-      <find>event_</find>
-      <find>popul</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +118,8 @@
       <workItem from="1566362503419" duration="1002000" />
       <workItem from="1566369730893" duration="517000" />
       <workItem from="1566458173068" duration="49000" />
-      <workItem from="1566458264441" duration="5906000" />
+      <workItem from="1566458264441" duration="10613000" />
+      <workItem from="1566493191775" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1561533586733</created>
@@ -144,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561533639301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update UI ChatBox">
+      <created>1566464438743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566464438744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +153,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
