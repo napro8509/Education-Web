@@ -1,0 +1,38 @@
+.left{
+    float: left;
+    width: 70%;
+    height: 100vh;
+}
+.left p {
+    text-align: center;
+    color: white;
+}
+.right p {
+    text-align: center;
+    background: black;
+    color: white;
+}
+.right{
+    float: right;
+    width: 30%;
+    height: 100vh;
+}
+.video{
+    width: 100%;
+    height: 50vh;
+}
+@media only screen and (max-width: 768px){
+    .left, .right{
+        float: none;
+        width: 100%;
+        height: 50vh;
+    }
+    .video{
+        float: none;
+        width: 100%;
+        height: 50vh;
+    }
+}
+object {
+    object-fit: fill;
+}
