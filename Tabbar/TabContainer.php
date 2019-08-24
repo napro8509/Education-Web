@@ -9,9 +9,3 @@
         <?php include("Chat/ChatBox.php"); ?>
     </div>
 </div>
-<div class="tab-slider--nav">
-    <ul class="tab-slider--tabs">
-        <li class="tab-slider--trigger active" rel="tab1">Tab 1</li>
-        <li class="tab-slider--trigger" rel="tab2">Tab 2</li>
-    </ul>
-</div>

@@ -1,15 +1,16 @@
+p {
+    color: darkblue;
+}
 .left{
     float: left;
     width: 70%;
-    height: 100vh;
+    padding-right: 20px;
 }
 .left p {
-    text-align: center;
-    color: white;
+    color: darkblue;
 }
 .right p {
     text-align: center;
-    background: black;
     color: white;
 }
 .right{
@@ -34,4 +35,41 @@
 }
 object {
     object-fit: fill;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.lesson-title {
+    font-size: 20px;
+    color: darkslategray;
+    font-family: Georgia;
+    font-weight: bold;
+
+}
+ul li {
+    text-align: justify;
+    color: darkblue;
+}
+
+.course-outline {
+    border-bottom: 1px solid #2a70b8;
+}
+
+.course-outline span {
+    padding: 0px 30px;
+    background: darkslateblue;
+    border-radius: 8px 0px 8px 0px;
+    line-height: 30px;
+    color: white;
 }

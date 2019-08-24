@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e189828-6c5d-4465-8d8d-fb1e60d0d1a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chat/ChatList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tabbar/TabContainer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/ChatRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/ChatRoom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tabbar/TabContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tabbar/TabContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tabbar/TabContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tabbar/TabContainer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VirtualRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualRoom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/VirtualRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/VirtualRoom.css" afterDir="false" />
     </list>
@@ -119,7 +115,10 @@
       <workItem from="1566369730893" duration="517000" />
       <workItem from="1566458173068" duration="49000" />
       <workItem from="1566458264441" duration="10613000" />
-      <workItem from="1566493191775" duration="829000" />
+      <workItem from="1566493191775" duration="1118000" />
+      <workItem from="1566535016287" duration="1102000" />
+      <workItem from="1566620346539" duration="2109000" />
+      <workItem from="1566635764494" duration="1300000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1561533586733</created>
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566464438744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update UI ChatBox">
+      <created>1566494294904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566494294904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
