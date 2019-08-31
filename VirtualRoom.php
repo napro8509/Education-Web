@@ -20,19 +20,18 @@
         <div class="videoWrapper">
             <!-- Copy & Pasted from YouTube -->
             <!-- <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen style="border-radius: 8px"></iframe> -->
-
-            <div>
-                <input id="myUrl" type="text" value="" />
-            </div>
-            <div>
-                <button id="myBtn">YouTube</button>
-                <button id="myBtnf">Facebook</button>
-            </div>
-            </div>
-            <div><pre id="myCode"></pre></div>
+            <pre id="myCode"></pre>
             <div id="myCodef"></div>
         </div>
     <br/>
+
+        <div>
+            <input id="myUrl" type="text" value="" />
+        </div>
+        <div>
+            <button id="myBtn">YouTube</button>
+            <button id="myBtnf">Facebook</button>
+        </div>
         <span class="lesson-title">Giải phương trình bậc hai</span>
         <div>
             <br/>
@@ -97,7 +96,6 @@ $('#myBtn').click(function () {
     myId = getId(myUrl);
     
     $('#myId').html(myId);
-    
     $('#myCode').html('<iframe width="560" height="349" src="//www.youtube.com/embed/' + myId + '?autoplay=1&showinfo=0&controls=0" frameborder="0" allowfullscreen style="border-radius: 8px"></iframe>');
 });
 
