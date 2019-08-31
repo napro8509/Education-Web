@@ -11,11 +11,27 @@
     <link rel="stylesheet" type="text/css" href="styles/VirtualRoom.css">
     <link rel="stylesheet" type="text/css" href="Chat/ChatRoom.css">
     <link rel="stylesheet" type="text/css" href="Tabbar/TabContainer.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 <body>
 <div class="container" style="background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); width: 100%;">
     <div class="left">
+        <div class="videoWrapper">
+            <!-- Copy & Pasted from YouTube -->
+            <!-- <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen style="border-radius: 8px"></iframe> -->
+
+            <div>
+                <input id="myUrl" type="text" value="" />
+            </div>
+            <div>
+                <button id="myBtn">YouTube</button>
+                <button id="myBtnf">Facebook</button>
+            </div>
+            </div>
+            <div><pre id="myCode"></pre></div>
+            <div id="myCodef"></div>
+        </div>
     <br/>
         <span class="lesson-title">Giải phương trình bậc hai</span>
         <div>
@@ -43,7 +59,6 @@
         <h2 class="course-outline">
             <span>Đề cương môn học</span>
         </h2>
-        <?php include("PaintEditor/Drawing.php"); ?>
     </div>
     <div class="right">
         <?php include("Tabbar/TabContainer.php"); ?>
@@ -56,7 +71,46 @@
     </div>
 </div>
 
+<script type="text/javascript">
+    function getId(url) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = url.match(regExp);
 
+    if (match && match[2].length == 11) {
+        return match[2];
+    } else {
+        return 'error';
+    }
+}
+
+function getIdf(url) {
+    var testStr = "https://www.facebook.com/wftv/videos/2372884026364163/jvhvjkđsffgdsfds"
+    var splitStr = testStr.substring(url.indexOf('/videos/') + 8);
+    var test=splitStr.substring(splitStr.indexOf('/'));
+    var res = splitStr.replace(test, "");
+    return res;
+}
+var myId;
+
+$('#myBtn').click(function () {
+    var myUrl = $('#myUrl').val();
+    myId = getId(myUrl);
+    
+    $('#myId').html(myId);
+    
+    $('#myCode').html('<iframe width="560" height="349" src="//www.youtube.com/embed/' + myId + '?autoplay=1&showinfo=0&controls=0" frameborder="0" allowfullscreen style="border-radius: 8px"></iframe>');
+});
+
+$('#myBtnf').click(function () {
+    var myUrl = $('#myUrl').val();
+    myId = getIdf(myUrl);
+    
+    $('#myId').html(myId);
+    
+    $('#myCodef').html('<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></scr'+'ipt><div class="fb-video" data-href="https://www.facebook.com/facebook/videos/'+myId+'/" data-width="500" data-show-text="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook/videos/'+myId+'/"></blockquote></div></div>');
+});
+
+</script>
 
 
 
