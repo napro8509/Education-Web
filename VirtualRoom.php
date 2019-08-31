@@ -15,7 +15,8 @@
 
 </head>
 <body>
-<div class="container" style="background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); width: 100%;">
+<?php include("teacher_header.php"); ?>
+<div class="container" style="width: 100%;">
     <div class="left">
         <div class="videoWrapper">
             <!-- Copy & Pasted from YouTube -->
@@ -25,39 +26,43 @@
         </div>
     <br/>
 
-        <div>
-            <input id="myUrl" type="text" value="" />
+        <div class="Input">
+            <input id="myUrl" type="text" value="" class="Input-text" placeholder="Input your livestream url"/>
+            <label for="input" class="Input-label">Livestream Url</label>
         </div>
-        <div>
-            <button id="myBtn">YouTube</button>
-            <button id="myBtnf">Facebook</button>
+        <div class="d-flex justify-content-center">
+            <button id="myBtn" type="button" class="btn btn-danger active m-2"><i class="fab fa-youtube"></i>Youtube</button>
+            <button id="myBtnf" type="button" class="btn btn-primary active m-2"><i class="fab fa-facebook-f"></i> Facebook</button>
         </div>
         <span class="lesson-title">Giải phương trình bậc hai</span>
         <div>
             <br/>
         </div>
-        <p style="text-align: justify">
-            <b>Luyện thi THPT quốc gia PEN-C môn Toán - thầy Nguyễn Thanh Tùng</b> được thiết kế phù hợp hơn với những học sinh có học lực Khá - Giỏi khi tham gia ôn luyện cho kì thi THPT quốc gia. Khóa học được tinh gọn nhưng toàn diện, đảm bảo sự bao phủ toàn bộ kiến thức bám sát cấu trúc đề thi THPT quốc gia. Với sự tham gia giảng dạy của thầy Nguyễn Thanh Tùng - Thầy Tùng Mind-map, thầy giáo của sự chỉn chu, bài bản và sự nghiêm túc trong mỗi giờ giảng, chắc chắn các bạn học sinh sẽ vô cùng thích thú và hứng khởi khi đăng kí khóa học.
-        </p>
-        <p class="font-italic" style="text-align: justify">
-            Đặc biệt, cuối mỗi chuyên đề đều có đề kiểm tra năng lực được chia thành 4 level để học sinh thử thách và đánh giá mức độ nắm vững kiến thức ở mỗi chuyên đề của mình. Đề thi 4 level được xây dựng theo 4 cấp độ câu hỏi Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao. Vượt qua level thấp mới được thi tiếp level cao hơn. Hoàn thành 4 level được coi là đã nắm vững kiến thức trong chuyên đề đó.
-        </p>
-        <p>
-            Học sinh trước khi tham gia khóa học cần:
-        </p>
-        <ul>
-            <li>
-                <b>Đối với kiến thức 10,11:</b> Nắm chắc những phần kiến thức lớp 10,11 được vận dụng sang lớp 12 như: xét dấu tam thức bậc II, các công thức về hình học phẳng ứng dụng trong chuyên đề số phức, hàm số,...
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <b>Đối với kiến thức lớp 12:</b> hiểu các khái niệm mới và áp dụng làm được các bài tập cơ bản như cực trị, tích phân, phương trình mũ - logarit..
-            </li>
-        </ul>
-        <h2 class="course-outline">
-            <span>Đề cương môn học</span>
-        </h2>
+        <div>
+            <p style="text-align: justify">
+                <b>Luyện thi THPT quốc gia PEN-C môn Toán - thầy Nguyễn Thanh Tùng</b> được thiết kế phù hợp hơn với những học sinh có học lực Khá - Giỏi khi tham gia ôn luyện cho kì thi THPT quốc gia. Khóa học được tinh gọn nhưng toàn diện, đảm bảo sự bao phủ toàn bộ kiến thức bám sát cấu trúc đề thi THPT quốc gia. Với sự tham gia giảng dạy của thầy Nguyễn Thanh Tùng - Thầy Tùng Mind-map, thầy giáo của sự chỉn chu, bài bản và sự nghiêm túc trong mỗi giờ giảng, chắc chắn các bạn học sinh sẽ vô cùng thích thú và hứng khởi khi đăng kí khóa học.
+            </p>
+            <p class="font-italic" style="text-align: justify">
+                Đặc biệt, cuối mỗi chuyên đề đều có đề kiểm tra năng lực được chia thành 4 level để học sinh thử thách và đánh giá mức độ nắm vững kiến thức ở mỗi chuyên đề của mình. Đề thi 4 level được xây dựng theo 4 cấp độ câu hỏi Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao. Vượt qua level thấp mới được thi tiếp level cao hơn. Hoàn thành 4 level được coi là đã nắm vững kiến thức trong chuyên đề đó.
+            </p>
+            <p>
+                Học sinh trước khi tham gia khóa học cần:
+            </p>
+            <ul>
+                <li>
+                    <b>Đối với kiến thức 10,11:</b> Nắm chắc những phần kiến thức lớp 10,11 được vận dụng sang lớp 12 như: xét dấu tam thức bậc II, các công thức về hình học phẳng ứng dụng trong chuyên đề số phức, hàm số,...
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <b>Đối với kiến thức lớp 12:</b> hiểu các khái niệm mới và áp dụng làm được các bài tập cơ bản như cực trị, tích phân, phương trình mũ - logarit..
+                </li>
+            </ul>
+            <h2 class="course-outline">
+                <span>Đề cương môn học</span>
+            </h2>
+        </div>
+
     </div>
     <div class="right">
         <?php include("Tabbar/TabContainer.php"); ?>
