@@ -767,7 +767,7 @@ body.vi *, body.vi a
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
     background-color:#5972a7;
 }
-.direction-toeic{background: #ef4034;  padding: 3%;  margin: 4%;  width: 111px;  color: #ffffff;  text-align: center;}
+.direction-toeic{padding: 3%;  margin: 4%;  width: 111px;  color: #ffffff;  text-align: center;}
 .direction-toeic:hover,.direction-toeic a:hover{color:#ffffff;}
 #choice-part-06 .col-md-6{width:50%;float:left;}
 .typetext{font-size:35px;}

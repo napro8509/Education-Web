@@ -17,24 +17,25 @@
                 src="https://wallstreetenglish.edu.vn/files/banner/2018/08/wse-hoang-thuy.jpg" class="img-responsive"
                 alt="Bài kiểm tra tiếng Anh" width="100%"></a></div>
 <div class="container my-container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul id="breadcrumb" class="list-inline mg-left-xs-0 hidden-xs">
+                <li class="home">
+                    <a>Trang Chủ</a>
+                </li>
+                <li class="home">
+                    <a>Kiểm tra</a>
+                </li>
+                <li class="active">
+                    <a>Tiếng Anh</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <?php include("QuizExam.php"); ?>
 
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <ul id="breadcrumb" class="list-inline mg-left-xs-0 hidden-xs">
-                    <li class="home">
-                        <a>Trang Chủ</a>
-                    </li>
-                    <li class="home">
-                        <a>Kiểm tra</a>
-                    </li>
-                    <li class="active">
-                        <a>Tiếng Anh</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
         <div class="intro-test text-center">
             <p style="text-align: center">
                 <span style="font-family: Open Sans, sans-serif">Trải nghiệm cảm giác thi TOEIC với bài kiểm tra mới</span>
