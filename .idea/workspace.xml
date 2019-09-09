@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e189828-6c5d-4465-8d8d-fb1e60d0d1a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Quiz/QuizExam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/QuizTest.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/QuizTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chat/ChatRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/ChatRoom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VirtualRoom.php" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualRoom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/VirtualRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/VirtualRoom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -122,7 +122,9 @@
       <workItem from="1566635764494" duration="1529000" />
       <workItem from="1566795407842" duration="168000" />
       <workItem from="1567004415207" duration="3197000" />
-      <workItem from="1567222178453" duration="5132000" />
+      <workItem from="1567222178453" duration="5143000" />
+      <workItem from="1567826640891" duration="720000" />
+      <workItem from="1568003209078" duration="7141000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1561533586733</created>
@@ -173,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567225536272</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update UI ChatBox">
+      <created>1567238821045</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567238821045</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

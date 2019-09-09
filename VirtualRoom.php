@@ -15,7 +15,6 @@
 
 </head>
 <body>
-<?php include("teacher_header.php"); ?>
 <div class="container" style="width: 100%;">
     <div class="left">
         <div class="videoWrapper">
